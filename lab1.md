@@ -19,3 +19,9 @@
   
   ![Image](cd_file_directory.png)
   
+The working directory was /home when the command was run. I received this output because I used Hello.java as if it were a directory. Therefore, the output is an error because Hello.java is a file when cd expected a directory as an argument. 
+
+
+## 2. ls
+
+   **No arguments**
