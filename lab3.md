@@ -55,18 +55,23 @@ For the find command:
     ./technical/scripts
     ./technical/logs
 
-      ``` 
+      ```
+    This command lists all the directories within the ./technical directory. This is useful when you want to focus on directory structures.
   Example 2: 
   Input: 
      ```
      find ./technical -type f
      ``` 
+     
 Output: 
       ``` 
     ./technical/readme.txt
     ./technical/docs/report.docx
     ./technical/scripts/deploy.sh
       ``` 
+   This command lists all the regular files within the ./technical directory. This can be very useful when you want to perform actions on just the files and not directories.
+
+
 2. -name
 Example 1: 
 Input:
@@ -78,6 +83,8 @@ Input:
     ./technical/config.json
     ./technical/scripts/config.json
     ``` 
+    This command searches for all files named config.json in the ./technical directory and subdirectories. This is useful when you need to locate files with a specific name.
+    
   Example 2: 
   Input: 
    ```
@@ -88,6 +95,7 @@ Output:
 ./technical/scripts/deploy.sh
 ./technical/scripts/install.sh
  ```
+This command searches for files that have a .sh extension, which usually denotes shell scripts. It’s helpful when you need to find script files.
 
 3. -mtime
 Example 1:
@@ -99,6 +107,8 @@ Output:
    ```
 ./technical/logs/error.log
  ```
+This command lists files that were last modified exactly 10 days ago. It’s useful for locating files that changed on a specific date.
+
 Example 2:
 Input:
  ```
@@ -109,6 +119,7 @@ Output:
 ./technical/old_data.csv
 ./technical/docs/old_report.docx
  ```
+This command lists files modified more than 10 days ago. This can be used for cleanup or archiving older files.
 
 4. -size
 Example 1:
@@ -121,6 +132,7 @@ Output:
 ./technical/logs/large_error.log
 ./technical/data/sample_large.csv
  ```
+This command finds files larger than 500KB. This is useful for locating files that may be taking up too much space. 
 
 Example 2: 
 Input:
@@ -134,3 +146,4 @@ Output:
 ./technical/scripts/deploy.sh
 
  ```
+This command finds files that are smaller than 100KB. This could be useful when you are searching for small configuration or property files.
