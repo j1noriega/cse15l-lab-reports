@@ -142,6 +142,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 
 Files and directory: 
+```
 lab7/
 │
 ├── lib/
@@ -158,6 +159,7 @@ lab7/
 ├── StringChecker.class
 │
 └── test.sh
+```
 
 - To trigger the bug I ran the test using ``bash test.sh``
 - To fix the bug I changed result.add(0, s); to result.add(s); in the ListExamples filter to have the expected order of elements.
@@ -165,5 +167,4 @@ lab7/
 
 # Part 2
 
-- During this part of the quarter I learned a lot about making edits from the command line. I did not realize there are many keyboard shortcuts that can really speed up the process of editing files with enough practice. I also found it cool to access
--  my Github account from the command line as well which I did not know was possible before. Additionally, I learned more about the TAs through conversation and learned about their experiences in undergrad and attending grad school. 
+- During this part of the quarter I learned a lot about making edits from the command line. I did not realize there are many keyboard shortcuts that can really speed up the process of editing files with enough practice. I also found it cool to access my Github account from the command line as well which I did not know was possible before. Additionally, I learned more about the TAs through conversation and learned about their experiences in undergrad and attending grad school. 
